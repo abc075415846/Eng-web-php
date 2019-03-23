@@ -1,102 +1,269 @@
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+*{
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    line-height:1;
+  font-family: "Lato", Helvetica, Arial;
+  font-size: 14px;
+  line-height: 18px;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+.wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-nav ul {
-    list-style:none;
+h1 {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: none;
 }
 
-blockquote, q {
-    quotes:none;
+[class *="col-span"]{
+    box-sizing: border-box;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+.row {
+    margin-bottom: 15px;
 }
 
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+.row:after {
+    content: " ";
+    clear: both;
+    display: block;
 }
 
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+.clear-fix{
+    content: " ";
+    clear: both;
+    display: block;
 }
 
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+img {
+    width: 100%;
+    /*padding-bottom: 100%;*/
+    background-size: 100% 100%
+    background: 0 0 no-repeat;
 }
 
-del {
-    text-decoration: line-through;
+
+.sm-col-span-2 {
+    width: calc((100% - 30px) / 12 * 2);
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+.sm-col-span-4 {
+    width: calc((100% - 30px) / 12 * 4);
 }
 
-table {
-    border-collapse:collapse;
-    border-spacing:0;
+.sm-col-span-6 {
+    width:  calc((100% - 30px)/ 12 * 6);
 }
 
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+.sm-col-span-8 {
+    width:  calc((100% - 30px) / 12 * 8);
 }
 
-input, select {
-    vertical-align:middle;
+.sm-col-span-10 {
+    width:  calc((100% - 30px) / 12 * 10);
+}
+
+.sm-col-span-12 {
+    width: calc(100% - 30px);
+}
+/*-------*/
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000;
+    background-color: #fff;
+}
+
+.logo {
+    text-align: right;
+}
+
+.logo img {
+    padding: 0;
+    width: 60%;
+}
+
+ul li {
+    list-style: none;
+    float: left;  
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+}
+/*-----Dropdown menu-------*/
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+
+
+.nav-menu ul {
+    padding-left: 0px;
+}
+
+.nav-menu ul li {
+    padding: 10px 10px 10px 20px;
+    text-transform: uppercase;
+} 
+
+.dropdown-child {
+    position: absolute;
+    display:none;
+    top: 41px;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1.5px 0;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.dropdown-child li {
+    min-width: 175px;
+}
+
+.dropdown-child li a{
+     text-transform: capitalize;
+}
+
+.nav-menu ul li:hover .dropdown-child{
+    display: block;
+}
+
+.dropdown-child li:hover {
+    background: #f1f1f1;
+}
+
+.active {
+    background: #cc0000;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/*link group register*/
+.button-group {
+    font-size: 80%;
+}
+
+.button-group{
+    position: absolute;
+    right: -1.5em;
+    padding: 0;
+}
+
+/*.login {
+    float: left;
+}*/
+
+.button-group a {
+    padding: 7px 5px;
+    cursor: pointer; 
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.login {
+    background: #304480;
+}
+
+.login {
+    color: #fff;
+}
+
+.button-group .login:hover {
+    text-decoration: underline;
+}
+
+.register {
+    color: #304480;
+}
+/*------------*/
+.notify {
+    display: inline-block;
+    padding: 10px;
+    padding-left: 4%;
+}
+
+.notify a {
+    text-decoration: none;
+    color: red;
+}
+/*Search Form*/
+.form-search {
+    float: right;
+}
+
+.form-search input,
+.form-search button {
+    padding: 4.5px;
+}
+
+.form-search input {
+    border-radius: 5%;
+}
+
+/*Right menu*/
+
+.nav-right-menu {
+    padding: 0 10px;
+    border-top: 1px solid #000;
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+
+.nav-right-menu ul {
+    height: 12.51em;
+    margin-bottom: 9.8%;
+}
+
+.nav-right-menu li {
+    text-align: left;
+    padding: 5px 0;
+}
+/*Main*/
+
+
+
+
+/*----------------Footer-----------------*/
+
+ footer {
+    height: 200px;
+    background: #000;
+ }
+
+ footer .wrapper a{
+    color: #fff;
+    float: left;
+    display: block;
+}
+
+@media screen and (max-width: 1000px){
+    .nav-menu li:not(:first-child) {
+        display: none;
+    }
+}
+@media screen and (max-width: 767px){
+
 }

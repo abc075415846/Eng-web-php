@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/test.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<title>My index</title>
+	</head>
+	<body>
+		<header>
+			<div class="wrapper">
+				<div class="row">
+					<div class="sm-col-span-12 lg-col-span-2">
+						<div class="logo sm-col-span-2">
+							<!-- <h1>LOGO</h1> -->
+							<img src="./Images/preview.png" alt="logo">
+						</div>
+						<nav style="padding-left: 0" >
+							<ul class="nav-menu" id="my-nav-menu">
+								<li class="active"><a href="index.html">Trang chủ</a></li>
+								<li class="dropdown">
+									<a href="#">Khóa học</a>
+									<ul class="dropdown-child">
+										<li><a href="#">Anh văn căn bản</a></li>
+										<li><a href="#">Anh văn giao tiếp</a></li>
+										<li><a href="#">Luyện thi toeic</a></li>
+										<li><a href="#">Luyện thi ielts</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Giáo viên</a></li>
+								<li><a href="#">Học phí</a></li>
+								<li class="dropdown">
+									<a href="#">Phòng thi</a>
+									<ul class="dropdown-child">
+										<li><a href="#">Tự luyện</a></li>
+										<li><a href="#">Đánh giá năng lực</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Hỗ trợ</a></li>
+							</ul>
+							<div class="nav-register">
+								<ul>
+									<li><a class="login" href="#">Đăng nhập</a></li>
+									<li><a class="register" href="#">Đăng ký</a></li>
+								</ul>
+								<button id="btn-user">
+									<i class="fas fa-user"></i>
+								</button>
+								<ul>
+									<li><a href="#">Đăng nhập</a></li>
+									<li><a href="#">Đăng ký</a></li>
+								</ul>
+							</div>
+							
+							<div class="search-menu">
+								<div class="notify sm-col-span-6">
+									<a href=""><span>HOT</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+								</div>
+								<div class="form-search sm-col-span-4">
+									<input type="text" placeholder="Tìm kiếm khóa học.." name="search">
+									<button type="submit"><i class="fas fa-search"></i></button>
+								</div>
+							</div>
+						</nav>
+					</div>
+					<div class="icon-menu lg-col-span-2">
+						<button onclick="menuDrop()" id="btn-menu"><i class="fas fa-bars"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		
+	</main>
+	<footer>
+		
+	</footer>
+	<script>
+		function menuDrop(){
+			var menu = document.getElementById("my-nav-menu");
+			var y = document.getElementById("btn-menu");
+			if(menu.className === "nav-menu"){
+				menu.className += " nav-menu-mobile";
+				y.style.background = "#cc0000";
+			}else {
+				menu.className = "nav-menu";
+				y.style.background = "#000";
+			}
+		}
+	</script>
+</body>
+</html>
