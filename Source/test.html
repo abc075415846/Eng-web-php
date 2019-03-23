@@ -40,14 +40,13 @@
 								<li><a href="#">Hỗ trợ</a></li>
 							</ul>
 							<div class="nav-register">
-								<ul>
+								<ul id="myDropdown" class="dropdown-content">
 									<li><a class="login" href="#">Đăng nhập</a></li>
 									<li><a class="register" href="#">Đăng ký</a></li>
 								</ul>
-								<button id="btn-user">
-									<i class="fas fa-user"></i>
+								<button id="btn-user" onclick="lgDrop()">
+								<i class="fas fa-user"></i>
 								</button>
-								
 							</div>
 							
 							<div class="search-menu">
@@ -73,7 +72,44 @@
 		
 	</main>
 	<footer>
-		
+		<div class="wrapper">
+				<div class="row">
+					<nav class="nav-footer">
+						<div class="sm-col-span-2">
+							<h3>DLT</h3>
+							<ul>
+								<li><a href="#">Giới thiệu</a></li>
+								<li><a href="#">Điều khoản và chính sách</a></li>
+								<li><a href="#">Tuyển dụng</a></li>
+							</ul>
+						</div>
+						<div class="sm-col-span-2">
+							<h3>DLT</h3>
+							<ul>			
+								<li><a href="#">Giới thiệu</a></li>
+								<li><a href="#">Điều khoản và chính sách</a></li>
+								<li><a href="#">Tuyển dụng</a></li>
+							</ul>
+						</div>
+						<div class="sm-col-span-2">
+							<h3>DLT</h3>
+							<ul>				
+								<li><a href="#">Giới thiệu</a></li>
+								<li><a href="#">Điều khoản và chính sách</a></li>
+								<li><a href="#">Tuyển dụng</a></li>
+							</ul>
+						</div>
+						<div class="sm-col-span-4">
+							<h3>Thông tin liên hệ</h3>
+							<ul>			
+								<li><a href="#">Giới thiệu</a></li>
+								<li><a href="#">Điều khoản và chính sách</a></li>
+								<li><a href="#">Tuyển dụng</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
 	</footer>
 	<script>
 		function menuDrop(){
@@ -87,6 +123,10 @@
 				y.style.background = "#000";
 			}
 		}
+		function lgDrop(){
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+
 	</script>
 </body>
 </html>
