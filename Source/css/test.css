@@ -12,6 +12,8 @@ body {
   line-height: 18px;
   box-sizing: border-box;
   overflow-x: hidden;
+  max-width: 1300px;
+  line-height: 1.5;
 }
 
 .wrapper {
@@ -89,11 +91,24 @@ ul li a {
 
 img {
     width: 100%;
-    /*padding-bottom: 100%;*/
     background-size: 100% 100%
-    background: 0 0 no-repeat;
 }
 
+.show {
+    display: block;
+}
+
+/*--scroll Header--*/
+#scroll-header {
+    position: fixed;
+    top: -200px;
+    left: 0;
+    display: block;
+    transition: top .3s;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 /*-----Logo----*/
 .logo {
     text-align: center;
@@ -127,7 +142,6 @@ img {
     left: 0;
     background: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-/*    margin-top: 1px;*/
     border-radius: 5px;
     text-align: left;
 }
@@ -233,6 +247,12 @@ img {
 }
 
 /*-----Icon-menu-------*/
+#btn-menu {
+    width: 30px;
+    height: 42px;
+}
+
+
 .icon-menu {
     float: right;
     display: none;
@@ -243,18 +263,24 @@ img {
    font-size: 25px;
 }
 
+/*-------main-----------*/
+main {
+    min-height: calc(100vh - 300px - 140px);
+}
+
 
 /*------------footer----------------*/
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100vw;
-    height: 200px;
     background: #000;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 300px;
  }
 
 footer .wrapper a{
-    color: #fff;
+    color: #f1f1f1;
     float: left;
     display: block;
 }
@@ -277,12 +303,40 @@ footer h3 {
     padding-bottom: 3px;
 }
 
+/*icon-footer*/
+.dropdown-footer {
+    display: none;
+}
+
+
+.footer-menu {
+    display: block;
+}
+
 
 /*-----responsive-----*/
 @media screen and (max-width: 991px){
     body {
         box-sizing: border-box;
 
+    }
+
+    /*header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 42px;
+        display: block;
+        background: #000;
+    }*/
+
+    /*scroll header */
+    #scroll-header {
+        display: none;
+    }
+
+    .lg-col-span-12 {
+        width: 100%;
     }
 
     #btn-user {
@@ -321,36 +375,65 @@ footer h3 {
         color: #304480;
     }
 
-    .show {
-        display: block;
-    }
-
     .logo img {
     width: 100%;
     }
+
+    footer {
+        width: 100%;
+        height: 400px;
+    } 
 
     footer .wrapper a{
         color: #fff;
         float: left;
         display: block;
     }
-
+    /*-Menu dropdown footer-*/
     footer h3 {
-        padding-bottom: 20px;
-        font-size: 120%;
-        text-transform: uppercase;
-        color: #f1f1f1;
+        padding: 4px;
+        font-size: 100%;
+        display: inline-block;
     }
 
     .nav-footer .sm-col-span-2,
     .nav-footer .sm-col-span-4{
-        padding: 20px;
+        padding: 5px;
+        border-bottom: 1px solid #f1f1f1;
     }
-
 
     .nav-footer li {
         padding-top: 3px;
-     padding-bottom: 3px;
+        padding-bottom: 3px;
+    }
+
+    .footer-menu {
+        display: none;
+    }
+
+    .footer-menu li {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .dropdown-footer {
+        display: block;
+        float: right;
+        border: 0;
+        background-color: #000;
+    }
+
+    .footer-title {
+        line-height: 26px;
+    }
+
+    .fa-angle-down {
+        color: #f1f1f1;
+        font-size: 20px;
+    }
+
+    .show {
+        display: block;
     }
 
 }
@@ -363,12 +446,12 @@ footer h3 {
     header {
         padding: 0;
         background: #000;
-        min-width: 784px;
+        width: 100%;
     }
 
-
     footer {
-        width: 784px;
+        width: 100%;
+        min-height: 200px;
     }
 
     .lg-col-span-1{
@@ -407,20 +490,28 @@ footer h3 {
         line-height: 30px;
     }
 
+    .nav-menu-mobile {
+        background: #000;
+        /*width: 92vw;*/
+    }
     .nav-menu-mobile li {
         float: none;
     }
 
     .nav-menu-mobile li:not(:first-child) {
-        width: 91vw;
+        width: calc(91vw - 30px);
         display: block;
         text-align: left;
         float: none;
     }
 
+
     .nav-menu-mobile li a {
         color: #fff;
     }
 
+    .footer-menu {
+        display: none;
+    }
 }
 
