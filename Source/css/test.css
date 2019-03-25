@@ -10,10 +10,10 @@ body {
   font-family: "Lato", Helvetica, Arial;
   font-size: 15px;
   line-height: 18px;
-  box-sizing: border-box;
   overflow-x: hidden;
   max-width: 1300px;
   line-height: 1.5;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -100,14 +100,20 @@ img {
 
 /*--scroll Header--*/
 #scroll-header {
+    height: 45px;
     position: fixed;
     top: -200px;
     left: 0;
     display: block;
     transition: top .3s;
+    -webkit-transition: top .3s;
     background-color: #fff;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#scroll-header .dropdown-content {
+    line-height: 45px;
 }
 /*-----Logo----*/
 .logo {
@@ -168,7 +174,7 @@ img {
 
 .active a {
     color: #fff !important;
-    font-weight: bolder;
+    /*font-weight: bolder;*/
 }
 
 
@@ -313,6 +319,11 @@ footer h3 {
     display: block;
 }
 
+/*footer titile last*/
+.menu-special li {
+    display: block; 
+    width: 100%;
+}
 
 /*-----responsive-----*/
 @media screen and (max-width: 991px){
