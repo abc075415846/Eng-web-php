@@ -14,9 +14,13 @@ body {
 }
 
 /*banner slideshow*/
+.thumb {
+	
+	box-sizing: border-box;
+}
+
 .slide-show {
     width: 100%;
-    box-sizing: border-box;
     overflow: hidden;
     position: relative;
     height: auto;
@@ -34,8 +38,16 @@ body {
 }
 
 
+#slideShow img {
+	max-height: 350px;
+}
+
+.col-span-boxs img {
+	max-height: 160px;
+}
+
 .box-links {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 #slideShow {
@@ -76,8 +88,15 @@ section {
 }
 
 /*section button HOT*/
+
+.links-section-head {
+	line-height: 48px;
+	box-sizing: border-box;
+}
+
 .section-head {
     padding-bottom: 10px;
+    box-sizing: border-box;
 }
 
 .section-head a {
@@ -111,6 +130,9 @@ section {
 }
 
 .section-head-name {
+	display: block;
+	min-width: 20%;
+	float: left;
     background: #c00;
     color: #fff;
     text-transform: uppercase;
@@ -163,13 +185,12 @@ section {
 }
 
 .lSpg {
-	display: block;
-	text-align: center;
-	margin-left: 50%!important;
+	position: relative;
 }
 
 .lSpg li {
-	
+	position: absolute;
+	left: 50%;
 }
 
 /*links next, prev*/
@@ -218,6 +239,7 @@ section {
 /*nav right*/
 .nav-right-menu {
     height: auto;
+    padding: 0;
 }
 
 .news {
@@ -347,7 +369,11 @@ section {
         border-bottom: 2px solid #000;
     }
 
-
+    /*section*/
+    .section-head-name {
+		width: 95%;
+		float: none;
+	}
     .section-main {
     	width: 80%;
 	}

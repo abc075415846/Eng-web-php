@@ -19,7 +19,7 @@ body {
 .wrapper {
     padding-left: 15px;
     padding-right: 15px;
-    width: calc(100% - 30px);
+    width: calc(100vw - 30px);
     margin: 0 auto;
 }
 
@@ -64,6 +64,10 @@ body {
 
 .sm-col-span-8 {
     width:  calc((100% - 30px) / 12 * 8);
+}
+
+.sm-col-span-9 {
+    width:  calc((100% - 30px) / 12 * 9);
 }
 
 .sm-col-span-10 {
