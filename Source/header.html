@@ -1,103 +1,121 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	
+		
 	</head>
 	<body>
-			<div class="wrapper">
-				<div class="row">
-					<div class="sm-col-span-12 lg-col-span-3">
-						<div class="logo sm-col-span-2">
-							<!-- <h1>LOGO</h1> -->
-							<img src="./Images/preview.png" alt="logo">
+		<div class="wrapper">
+			<div class="row">
+				<div class="sm-col-span-12 lg-col-span-3">
+					<div class="logo sm-col-span-2">
+						<!-- <h1>LOGO</h1> -->
+						<img src="./Images/preview.png" alt="logo">
+					</div>
+					<nav class="sm-col-span-10">
+						<ul class="nav-menu" id="my-nav-menu">
+							<li class="active-home"><a href="index.html">Trang chủ</a></li>
+							<li class="search-mobile">
+								<input type="text" placeholder="Tìm kiếm khóa học.." name="search">
+								<button type="submit"><i class="fas fa-search"></i></button>
+							</li>
+							<li class="dropdown">
+								<a href="#">Khóa học</a>
+								<ul class="dropdown-child">
+									<li><a href="#">Anh văn căn bản</a></li>
+									<li><a href="#">Anh văn giao tiếp</a></li>
+									<li><a href="#">Luyện thi toeic</a></li>
+									<li><a href="#">Luyện thi ielts</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Giáo viên</a></li>
+							<li><a href="#">Học phí</a></li>
+							<li class="dropdown">
+								<a href="#">Phòng thi</a>
+								<ul class="dropdown-child">
+									<li><a href="#">Tự luyện</a></li>
+									<li><a href="#">Đánh giá năng lực</a></li>
+								</ul>
+							</li>
+							<li class="help"><a href="#">Hỗ trợ</a></li>
+						</ul>
+						<div class="nav-register clear-fix">
+							<ul id="myDropdown" class="dropdown-content">
+								<li><a class="login" href="#">Đăng nhập</a></li>
+								<li><a class="register" href="#">Đăng ký</a></li>
+							</ul>
+							<button id="btn-user" onclick="lgDrop()">
+							<i class="fas fa-user"></i>
+							</button>
 						</div>
-						<nav class="sm-col-span-10">
-							<ul class="nav-menu" id="my-nav-menu">
-								<li class="active-home"><a href="index.html">Trang chủ</a></li>
-								<li class="search-mobile">
-									<input type="text" placeholder="Tìm kiếm khóa học.." name="search">
-									<button type="submit"><i class="fas fa-search"></i></button>
-								</li>
-								<li class="dropdown">
-									<a href="#">Khóa học</a>
-									<ul class="dropdown-child">
-										<li><a href="#">Anh văn căn bản</a></li>
-										<li><a href="#">Anh văn giao tiếp</a></li>
-										<li><a href="#">Luyện thi toeic</a></li>
-										<li><a href="#">Luyện thi ielts</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Giáo viên</a></li>
-								<li><a href="#">Học phí</a></li>
-								<li class="dropdown">
-									<a href="#">Phòng thi</a>
-									<ul class="dropdown-child">
-										<li><a href="#">Tự luyện</a></li>
-										<li><a href="#">Đánh giá năng lực</a></li>
-									</ul>
-								</li>
-								<li class="help"><a href="#">Hỗ trợ</a></li>
-							</ul>
-							<div class="nav-register">
-								<ul id="myDropdown" class="dropdown-content">
-									<li><a class="login" href="#">Đăng nhập</a></li>
-									<li><a class="register" href="#">Đăng ký</a></li>
+						
+						<div class="search-menu clear-fix">
+							<div class="notify sm-col-span-6">
+								<a href=""><span>HOT</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+							</div>
+							<div class="form-search sm-col-span-6">
+								<input type="text" placeholder="Tìm kiếm khóa học.." name="search">
+								<button type="submit"><i class="fas fa-search"></i></button>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="icon-menu">
+					<button onclick="menuDrop()" id="btn-menu"><i class="fas fa-bars"></i>
+					</button>
+				</div>
+				<!---Menu scroll-->
+				<div class="sm-col-span-12 lg-col-span-4" id="scroll-header">
+					<nav style="padding-left: 0" >
+						<ul class="nav-menu" id="my-nav-menu">
+							<li class="active-home"><a href="index.html">Trang chủ</a></li>
+							<li class="dropdown">
+								<a href="#">Khóa học</a>
+								<ul class="dropdown-child">
+									<li><a href="#">Anh văn căn bản</a></li>
+									<li><a href="#">Anh văn giao tiếp</a></li>
+									<li><a href="#">Luyện thi toeic</a></li>
+									<li><a href="#">Luyện thi ielts</a></li>
 								</ul>
-								<button id="btn-user" onclick="lgDrop()">
-								<i class="fas fa-user"></i>
-								</button>
-							</div>
-							
-							<div class="search-menu clear-fix">
-								<div class="notify sm-col-span-6">
-									<a href=""><span>HOT</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
-								</div>
-								<div class="form-search sm-col-span-6">
-									<input type="text" placeholder="Tìm kiếm khóa học.." name="search">
-									<button type="submit"><i class="fas fa-search"></i></button>
-								</div>
-							</div>
-						</nav>
-					</div>
-					<div class="icon-menu">
-						<button onclick="menuDrop()" id="btn-menu"><i class="fas fa-bars"></i>
-						</button>
-					</div>
-					<!---Menu scroll-->
-					<div class="sm-col-span-12 lg-col-span-4" id="scroll-header">
-						<nav style="padding-left: 0" >
-							<ul class="nav-menu" id="my-nav-menu">
-								<li class="active-home"><a href="index.html">Trang chủ</a></li>
-								<li class="dropdown">
-									<a href="#">Khóa học</a>
-									<ul class="dropdown-child">
-										<li><a href="#">Anh văn căn bản</a></li>
-										<li><a href="#">Anh văn giao tiếp</a></li>
-										<li><a href="#">Luyện thi toeic</a></li>
-										<li><a href="#">Luyện thi ielts</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Giáo viên</a></li>
-								<li><a href="#">Học phí</a></li>
-								<li class="dropdown">
-									<a href="#">Phòng thi</a>
-									<ul class="dropdown-child">
-										<li><a href="#">Tự luyện</a></li>
-										<li><a href="#">Đánh giá năng lực</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Hỗ trợ</a></li>
-							</ul>
-							<div class="nav-register">
-								<ul id="myDropdown" class="dropdown-content">
-									<li><a class="login" href="#">Đăng nhập</a></li>
-									<li><a class="register" href="#">Đăng ký</a></li>
+							</li>
+							<li><a href="#">Giáo viên</a></li>
+							<li><a href="#">Học phí</a></li>
+							<li class="dropdown">
+								<a href="#">Phòng thi</a>
+								<ul class="dropdown-child">
+									<li><a href="#">Tự luyện</a></li>
+									<li><a href="#">Đánh giá năng lực</a></li>
 								</ul>
-							</div>
-						</nav>
-					</div>
+							</li>
+							<li><a href="#">Hỗ trợ</a></li>
+						</ul>
+						<div class="nav-register">
+							<ul id="myDropdown" class="dropdown-content">
+								<li><a class="login" href="#">Đăng nhập</a></li>
+								<li><a class="register" href="#">Đăng ký</a></li>
+							</ul>
+						</div>
+					</nav>
 				</div>
 			</div>
+			<a href="#" class="scrollTop"><i class="fas fa-angle-up"></i></a>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$(window).scroll(function(){
+						if($(this).scrollTop() > 100){
+							$('.scrollTop').fadeIn();
+						}else{
+							$('.scrollTop').fadeOut();
+						}
+					});
+
+					$('.scrollTop').click(function(){
+						$('html, body').animate({scrollTop : 0}, 600);
+						return false;
+					});
+
+				});
+			</script>
 		</div>
+	</div>
 </body>
 </html>

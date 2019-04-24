@@ -1,0 +1,104 @@
+.content {
+	background-color: #eee;
+	margin-top: 0;
+	padding: 0;
+}
+
+
+.fgpass {
+	text-align: right;
+	padding-right: 0;
+	width: 100%;
+	text-decoration: none;
+	color: #5F41FA;
+}
+
+.links span {
+	color: #8F8C8C;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+}
+
+.links a {
+	color: #5F41FA;
+	text-decoration: none;
+	margin-right: 2px;
+	line-height: 2.5;
+}
+
+.logo-sm {
+	display: none;
+}
+
+.nav-menu-right {
+	max-width: 300px;
+	margin-top: 15px;
+
+}
+
+.intro-right {
+	display: block;
+	text-align: center;
+	padding: 30px;
+}
+
+h2 {
+	text-align: center;
+}
+
+.form {
+	border-right: 1px solid #f1f1f1;
+	background-color: #fff;
+	padding: 30px;
+}
+
+/*------nav right---------*/
+
+
+.nav-menu-right {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
+/*check icon*/
+
+
+.menu-right i {
+	font-size: 10px;
+	color: #3BC041;
+	padding-right: 5px;
+}
+
+.menu-right li {
+	line-height: 1.75;
+}
+
+
+
+@media screen and (max-width: 768px){
+	
+	/*---------hiden-----------*/
+	.intro-right {
+		display: none;
+	}
+	
+	form {
+		min-height: 428px;
+	}
+
+	.form {
+		border-right: 0;
+	}
+	.logo-sm {
+		display: block;
+		margin-top: 15px;
+	}
+
+	.lg-col-span-4 h2 {
+		padding-top: 35px;
+	}
+
+
+}

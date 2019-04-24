@@ -1,5 +1,5 @@
 body {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .clear-fix::after {
@@ -236,11 +236,21 @@ section {
     padding: 3px;
 }
 
-/*nav right*/
+/*nav right menu*/
+
 .nav-right-menu {
-    height: auto;
-    padding: 0;
+    overflow: hidden;
+    height: 529px;
+
 }
+
+.banner-right img{
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+
+}
+
 
 .news {
     margin-bottom: 20px;
@@ -297,7 +307,7 @@ section {
     background-color: #c00;
     font-size: 16px;
     width: 16px;
-    border-radius: 16px;
+    border-radius: 30px;
     text-align: center;
     margin-right: 5px;
 }
@@ -326,6 +336,7 @@ section {
     /*nav right menu*/
     .nav-right-menu {
         display: flex;
+        height: auto;
     }
 
     .news-head {
@@ -363,10 +374,17 @@ section {
     .news-main li:last-child {
  	   margin-bottom: 0;
 	}
+
     .banner-right {
         width: 50%;
-        max-width: 50%;
         border-bottom: 2px solid #000;
+    }
+
+    .banner-right img {
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+        max-height: 230px;
     }
 
     /*section*/

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Account</title>
+		<script
+			src="http://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous">
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/wrap.css">
+		<link rel="stylesheet" type="text/css" href="css/header-basic.css">
+		<link rel="stylesheet" type="text/css" href="css/account.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<script>
+			$(function(){
+				$("header").load("header-basic.html");
+				$("footer").load("footer.html");
+			});
+		</script>
+	</head>
+	<body>
+	<header></header>
+	<div class="wrapper">
+		<div class="row">
+			<div class="sm-col-span-12 lg-col-span-4">
+				<div class="banner-avatar">
+					<div class="banner">
+						<img src="./Images/adult-chill-computer-450271.jpg">
+					</div>
+					<div class="avatar">
+						<a href="#"><img src="./Images/my-avatar.jpg"></a>
+					</div>
+					<div class="name-accout">
+						<span><a href="#">Trường Danh</a></span>
+						<span><a href="#">(ID: 015421457)</a></span>
+					</div>
+					<nav>
+						<ul class="link-under-banner clear-fix">
+							<li><a href="#">Thông tin cá nhân</a></li>
+							<li><a href="#">Thông tin tài khoản</a></li>
+							<li><a href="#">Trợ giúp</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="sm-col-span-12 lg-col-span-4">
+				<div class="acc-func-wr">
+					<div class="acc-func-left">
+						<nav>
+							<ul class="ac-func-menu-l">
+								<li class="active"><a href="#">Cập nhật thông tin</a></li>
+								<li><a href="#">Thay đổi mật khẩu</a></li>
+								<li><a href="#">Trợ giúp</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="acc-info-right">
+						<form action="" method="POST" class="form-register clear-fix">
+							<h3>Thông tin cá nhân</h3>
+							<div class="form-group sm-col-span-12 lg-col-span-4">
+								<label>
+									<p>Họ tên</p>
+								</label>
+								<input type="text" name="name" value="Danh">
+							</div>
+							<div class="form-group sm-col-span-12 lg-col-span-4">
+								<label>
+									<p>Ngày sinh</p>
+								</label>
+								<input type="date" name="date">
+							</div>
+							<div class="form-group sm-col-span-12 lg-col-span-4">
+								<label>
+									<p>Giới tính</p>
+								</label>
+								<div class="select-style">
+									<i class="fas fa-chevron-down"></i>
+									<select name="sex" id="sex">
+										<option value="0">Nam</option>
+										<option value="1">Nữ</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group sm-col-span-12 lg-col-span-4">
+								<label>
+									<p>Email</p>
+								</label>
+								<input type="email" name="email" value="example@gmail.com">
+							</div>
+							<div class="form-group sm-col-span-12 lg-col-span-4">
+								<label>
+									<p>Tên đăng nhập</p>
+								</label>
+								<input type="text" name="username">
+							</div>
+							<div class="form-group sm-col-span-12 lg-col-span-4">
+								<label>
+									<p>Địa chỉ</p>
+								</label>
+								<input type="text" name="adress" >
+							</div>
+							<div class="form-group sm-col-span-12 lg-col-span-4">
+								<label>
+									<p>Số điện thoại</p>
+								</label>
+								<input type="tel" name="phone">
+							</div>
+							<div class="btn-group sm-col-span-12 lg-col-span-4">
+								<div class="btn-login">
+									<button type="submit">Cập nhật</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<footer></footer>
+</body>
+</html>
