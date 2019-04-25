@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>List course</title>
+		<script
+			src="http://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous">
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/wrap.css">
+		<link rel="stylesheet" type="text/css" href="css/header-basic.css">
+		<link rel="stylesheet" type="text/css" href="css/course-test.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<script>
+			$(function(){
+				$("header").load("header-basic.html");
+				$("footer").load("footer.html");
+			});
+		</script>
+	</head>
+	<body>
+	<header></header>
+	<div class="wrapper">
+		<div class="row">
+			<div class="sm-col-span-12 lg-col-span-4">
+				<nav>
+					<ul class="breadcrumb clear-fix">
+						<li><a href="#"><i class="fas fa-home"></i> Trang chủ</a></li>
+						<li><a href="#">Khóa học</a></li>
+						<li><a href="#">English</a></li>
+						<li>Test 01</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class="sm-col-span-12 lg-col-span-4">
+				<div class="content-wr-intro">
+					<h3><span>English For All</span></h3>
+					<div class="test-info">
+						<table class="table">
+							<tr>
+								<td colspan="2"><div class="ts-info-title">Test 01 Noun</div></td>
+							</tr>
+							<tr>
+								<td>Tổng số câu: </td>
+								<td>10 / 10</td>
+							</tr>
+							<tr>
+								<td>Điểm số tối đa: </td>
+								<td>10 / 10</td>
+							</tr>
+							<tr>
+								<td>Thời gian làm bài: </td>
+								<td>30:00 phút</td>
+							</tr>
+						</table>
+						<div class="start-test">
+							<button type="button" id="btn-start">Bắt đầu kiểm tra</button>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+<footer></footer>
+<script type="text/javascript" src="javascript/countDownTimer.js"></script>
+</body>
+</html>

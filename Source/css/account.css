@@ -234,11 +234,15 @@ footer {
 }
 
 /*------------form group--------------------*/
-	.form-group {
-		border: 0;
-		border-radius: 0;
-		border-bottom: 1px solid #eee;
-	}
+.form-group {
+	border: 0;
+	border-radius: 0;
+	border-bottom: 1px solid #eee;
+}
+
+.form-group input {
+	border-bottom-color: red;
+}
 
 @media screen and (max-width: 991px) {
 	.name-accout {
@@ -473,4 +477,9 @@ footer {
 		display: inline-block;
 		width: 100%;
 	}
+}
+
+/*--------------------page change password--------------------*/
+#submit-pass {
+	margin-left: 0;
 }
