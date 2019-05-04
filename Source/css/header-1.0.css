@@ -1,0 +1,28 @@
+.header-wr {
+	display: flex;
+	overflow: hidden;
+	height: 80px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #eee;
+}
+
+.header-logo-left {
+	width: 20%;
+}
+
+.header-right {
+	width: 80%;
+}
+
+/*header logo left img*/
+.header-logo-left img {
+	/*width: 200px;
+	height: 80px;*/
+	width: auto;
+	height: auto;
+	object-fit: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: none;
+	background-position: center;
+}

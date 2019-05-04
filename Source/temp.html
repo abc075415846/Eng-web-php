@@ -9,118 +9,54 @@
 		</script>
 		<link rel="stylesheet" type="text/css" href="css/sign-in.css">
 		<link rel="stylesheet" type="text/css" href="css/wrap.css">
+		<style type="text/css">
+			.wrapper {
+				width: 100%;
+			}
+
+			section {
+				width: 200px;
+				height: auto;
+				border: 1px solid #000;
+				position: relative;
+				z-index: 1;
+			}
+
+			section::after {
+				content: "";
+				background: url(./Images/logo.png);
+				opacity: .4;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+			}
+			/*.image {
+				background: url(./Images/logo.png);
+				opacity: .4;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+			}
+*/
+			.text {
+				
+			}
+		</style>
 	</head>
 	<body>
 		
-					<div class="container" id="container">
-						<div class="form-container sign-up-container">
-							<h2>Đăng Ký</h2>
-							<p>Đăng ký ngay hôm nay đễ nhận ưu đãi các khóa học miễn phí từ DLD</p>
-							<form action="" method="POST" class="form-register clear-fix">
-								<div class="form-group">
-									<label>
-										<p>Họ tên</p>
-									</label>
-									<input type="text" name="name" placeholder="Nguyễn Văn A">
-								</div>
-								<div class="form-group">
-									<label>
-										<p>Email</p>
-									</label>
-									<input type="email" name="email" placeholder="example@gmail.com">
-								</div>
-								<div class="form-group">
-									<label>
-										<p>Tên đăng nhập</p>
-									</label>
-									<input type="text" name="username">
-								</div>
-								<div class="form-group">
-									<label>
-										<p>Mật khẩu</p>
-									</label>
-									<input type="password" name="password">
-								</div>
-								<div class="form-group">
-									<label>
-										<p>Ngày sinh</p>
-									</label>
-									<input type="date" name="date">
-								</div>
-								<div class="form-group">
-									<label>
-										<p>Địa chỉ</p>
-									</label>
-									<input type="text" name="adress" placeholder="Tỉnh/Thành phố">
-								</div>
-								<div class="form-group">
-									<label>
-										<p>Số điện thoại</p>
-									</label>
-									<input type="tel" name="phone" placeholder="0123456789">
-								</div>
-								<div class="btn-group">
-									<div class="btn-login">
-										<button type="submit">Đăng Ký</button>
-									</div>
-								</div>
-							</form>
-							
-						</div>
-						<div class="form-container sign-in-container">
-							<h2>Đăng nhập</h2>
-							<form action="" method="POST" class="form-login">
-								<div class="form-group">
-									<label>
-										<p>Tên đăng nhập</p>
-									</label>
-									<input type="text" name="username">
-								</div>
-								<div class="form-group">
-									<label>
-										<p>Mật khẩu</p>
-									</label>
-									<input type="password" name="password">
-								</div>
-								<div class="btn-group">
-									<div class="btn-login">
-										<button type="submit">Đăng nhập</button>
-									</div>
-								</div>
-								<div class="links">
-									<a href="#" class="fgpass">Quên mật khẩu?</a>
-									<span><a href="#">Đăng ký </a>nếu chưa có tài khoản</span>
-								</div>
-							</form>
-							
-						</div>
-						<div class="overlay-container">
-							<div class="overlay">
-								<div class="overlay-panel overlay-left">
-									<h1>Welcome Back!</h1>
-									<p>To keep connected with us please login with your personal info</p>
-									<button class="ghost" id="signIn">Sign In</button>
-								</div>
-								<div class="overlay-panel overlay-right">
-									<h1>Hello, Friend!</h1>
-									<p>Enter your personal details and start journey with us</p>
-									<button class="ghost" id="signUp">Sign Up</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-		
-		<script type="text/javascript">
-			const signUpButton = document.getElementById('signUp');
-		const signInButton = document.getElementById('signIn');
-		const container = document.getElementById('container');
-		signUpButton.addEventListener('click', () => {
-		container.classList.add('right-panel-active');
-		});
-		signInButton.addEventListener('click', () => {
-		container.classList.remove('right-panel-active');
-		});
-		</script>
+		<div class="wrapper">
+			<section>
+				<!-- <div class="image">
+				</div> -->
+				<h1>Some text</h1>
+			</section>
+		</div>
 	</body>
 </html>

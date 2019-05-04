@@ -8,6 +8,20 @@ body {
     display: block;
 }
 
+.slide-wr {
+    display: flex;
+}
+
+.slide-wr-left {
+    width: 75%;
+}
+
+.nav-right-menu {
+    width: 25%;
+    padding-left: 10px;
+}
+
+
 /*hiden element*/
 .search-mobilde {
     display: none;
@@ -47,7 +61,7 @@ body {
 }
 
 .box-links {
-    margin-top: 15px;
+    margin-top: 7px;
 }
 
 #slideShow {
@@ -240,11 +254,12 @@ section {
 
 .nav-right-menu {
     overflow: hidden;
-    height: 529px;
+    max-height: 521px;
 
 }
 
 .banner-right img{
+    margin-top: -5px;
     background-position: center;
     background-size: cover;
     object-fit: cover;
@@ -323,6 +338,20 @@ section {
         display: none;
     }
 
+
+    .slide-wr {
+        display: block;
+    }
+
+
+    .slide-wr-left {
+        width: 100%;
+    }
+
+    .nav-right-menu {
+        width: 100%;
+        padding-left: 0;
+    }
     /*banner img*/
     #slideShow img {
         width: 100%;
