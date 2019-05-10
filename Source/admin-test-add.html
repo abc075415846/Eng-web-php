@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>test</title>
+		<meta charset="utf-8">
+		<script src="javascript/jquery-3.4.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/admin.css">
+		<link rel="stylesheet" type="text/css" href="css/admin-teacher.css">
+		<link rel="stylesheet" type="text/css" href="css/admin-test.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<script>
+			$(function(){
+				$(".header").load("admin-header.html");
+				$(".slide-left").load("admin-slide.html");
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wr">
+			<div class="slide-left"></div>
+			<div class="all-content-wr">
+				<div class="header">
+					
+				</div>
+				<div class="content-show">
+					<fieldset>
+						<legend>Thêm Bài kiểm tra</legend>
+						<div class="tablelist listQa">
+							<h3>Danh sách câu hỏi</h3>
+							<div class="fill">
+								<div class="fill-left">
+									<input type= "text" class="searchFil" id="searchFill" placeholder="search for question">
+								</div>
+							</div>
+							<table>
+								<thead>
+									<tr>
+										<th class="stt">Code</th>
+										<th class="type">Type</th>
+										<th class="qes">Câu hỏi</th>
+										<th class="asw">Đáp án</th>
+										<th class="fuc">Chức năng</th>
+									</tr>
+								</thead>
+								<tbody id="table-q">
+									<tr>
+										<td class="id">TC1</td>
+										<td>Toeic</td>
+										<td class="question">Hell__</td>
+										<td class="answer">o</td>
+										<td><a href="#" class="addTo">Thêm</a></td>
+									</tr>
+									<tr>
+										<td class="id">IE2</td>
+										<td>Basic</td>
+										<td class="question">H__</td>
+										<td class="answer">i</td>
+										<td><a href="#" class="addTo">Thêm</a></td>
+									</tr>
+									<tr>
+										<td class="id">BS3</td>
+										<td>Ielts</td>
+										<td class="question">C___t</td>
+										<td class="answer">a</td>
+										<td><a href="#" class="addTo">Thêm</a></td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="admin-QA-add.html" class="addQues">Add Question</a>
+						</div>
+						<form method="POST" class="form-submit">
+							<div class="form-type">
+								<h3>Select categorys of test</h3>
+								<div class="form-group select-style">
+									<i class="fas fa-chevron-down"></i>
+									<select id="type" required>
+										<option value="" selected>Category</option>
+										<option value="1">Ielts</option>
+										<option value="2">Toeic</option>
+										<option value="3">Basic</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-type">
+								<h3>Select level of test</h3>
+								<div class="form-group select-style">
+									<i class="fas fa-chevron-down"></i>
+									<select id="level" required>
+										<option value="" selected>Level</option>
+										
+									</select>
+								</div>
+							</div>
+							<div class="test-content">
+								<h3>Test Content</h3>
+								<div class="form-group">
+									<input type="text" name="name" placeholder="Test name">
+								</div>
+								<div class="form-group">
+									<input type="number" name="minutes" min="0" placeholder="Time (minutes)">
+								</div>
+								
+								<form method="POST" action="">
+									<div class="test-wr">
+										<div class="desc">
+											<span class="number">Câu 1</span>
+											<div class="test-q">
+												<textarea>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</textarea>
+											</div>
+											<div class="test-a">
+												<div class="answer">Correct Answer: <span>is</span></div>
+											</div>
+											<a href="#" class="remove">Delete</a>
+											<input type="hidden" name="idqa">
+											
+										</div>
+										<div class="desc">
+											<span class="number">Câu 2</span>
+											<div class="test-q">
+												<textarea>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</textarea>
+											</div>
+											<div class="test-a">
+												<div class="answer">Correct Answer: <span>is</span></div>
+											</div>
+											<a href="#" class="remove">Delete</a>
+											<input type="hidden" name="idqa">
+											
+										</div>
+									</div>
+									<div class="btn-group">
+										<button>Submit</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</form>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$('.addTo').on("click", function(){
+				var listQA = $('.desc');
+				var len = listQA.length + 1;
+				var $answer , $question, $id;
+				$answer = $(this).parent().parent().children('.answer').text();
+				$question = $(this).parent().parent().children('.question').text();
+				$id = $(this).parent().parent().children('.id').text();
+				var question = '<div class="desc"><span class="number">Câu '+len+'</span><div class="test-q"><textarea>'+$question+'</textarea></div><div class="test-a"><div class="answer">Correct Answer: <span>'+$answer+'</span></div></div><a href="#" class="remove">Delete</a><input type="hidden" name="'+$id+'"></div>';
+				$('.test-wr').append(question);
+			});
+			$('.remove').on("click", function(){
+				$(this).parent().remove('.desc');
+				
+				$('.desc').each(function(index){
+					$(this).children('.number').html('Câu '+(index+1)+'');
+				});
+			});
+			$('#searchFill').on("keyup", function(){
+				var fill = $(this).val().toLowerCase();
+				$('#table-q tr').filter(function(){
+					$(this).toggle($(this).text().toLowerCase().indexOf(fill) > -1);
+				});
+			});
+			let Toeic = ['500','600','700'];
+			let Ielts = ['5.5','6.5','7.5'];
+			let Basic = ['Basic','Listening','Speaking'];
+			$(document).on("change", "#type" ,function(){
+				var type = $(this).val();
+				var level = $('#level'),
+					i;
+				if(type == 2){
+					level.empty();
+					for(i=0; i < Toeic.length; i++){
+						level.append('<option value="'+i+'">'+Toeic[i]+'</option>');
+					}
+				} else if (type == 1){
+					level.empty();
+					for(i=0; i < Ielts.length; i++){
+						level.append('<option value="'+i+'">'+Ielts[i]+'</option>');
+					}
+				} else {
+					level.empty();
+					for(i=0; i < Basic.length; i++){
+						level.append('<option value="'+i+'">'+Basic[i]+'</option>');
+				}
+			}
+			});
+		});
+	</script>
+</body>
+</html>

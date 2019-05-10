@@ -381,7 +381,7 @@ input:valid {
 .breadcrumb {
     padding: 4px 16px;
     list-style: none;
-    background-color: #eee;
+    background-color: #f1f1f1;
     font-size: 14px;
 }
 
@@ -391,7 +391,16 @@ input:valid {
   content: "/\00a0";
 }
 
+.breadcrumb li {
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: grey;
+}
+
 .breadcrumb li a {
+  font-size: 14px;
+  letter-spacing: 1px;
   color: #0275d8;
   text-decoration: none;
 }
@@ -912,4 +921,9 @@ footer h3 {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .pagination {
+        padding-left: 2em;
+    }
+
 }

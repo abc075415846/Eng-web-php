@@ -13,12 +13,13 @@
 .test-content {
 	width: 70%;
 	box-sizing: border-box;
-	/*margin-left: 50px;*/
+	order: 1;
 }
 
 .total-question {
 	width: 30%;
 	box-sizing: border-box;
+	order: 2;
 }
 
 .test-content {
@@ -95,6 +96,8 @@
 	text-align: center;
 	font-weight: 900;
 	font-size: 16px;
+	letter-spacing: 1px;
+
 }
 
 .time-test span{
@@ -132,18 +135,20 @@
 
 @media screen and (max-width: 991px) {
 	.content-wr-qs {
-		display: block;
+		flex-wrap: wrap;
 		box-shadow: 0 4px 8px rgb(0,0,0,.4);
 		background-color: #fff;
 	}
 
-
 	.test-content {
 		width: 100%;
+		order: 2;
+		margin-bottom: 50px
 	}
 
 	.total-question {
 		width: 100%;
+		order: 1;
 		display: inline-block;
 	}
 
@@ -207,11 +212,15 @@
 .content-wr-intro {
 	padding: 50px 40px 50px 40px;
 	text-align: center;
-	background-color: #eee;
+	background-color: #fff;
 }
 
 .content-wr-intro h3 {
-	font-size: 26px;
+	font-size: 30px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000;
+	margin-bottom: 50px;
 }
 
 .test-info table {
@@ -224,14 +233,17 @@
 	border-collapse: collapse;
 	width: 35%;
 	text-align: left;
+	padding: 5px;
 	margin: 20px 0;
-	box-shadow: 0 2px 4px rgb(0,0,0,.2);
 	background-color: #fff;
 }
 
 .ts-info-title {
 	text-align: center;
 	font-weight: 700;
+	letter-spacing: 2px;
+	color: grey;
+	font-size: 20px;
 }
 
 .table tr {
@@ -242,6 +254,8 @@
 	border: 1px solid #eee;
 	box-sizing: border-box;
 	padding: 3px 10px;
+	letter-spacing: 1px;
+	font-size: 14px;
 }
 
 /*btn start*/
@@ -269,9 +283,18 @@
 	}
 }
 
+
+@media screen  and (max-width: 767px){
+	.content-wr-intro h3  {
+		font-size: 24px;
+	}
+}
+
+
 @media screen and (max-width: 480px) {
 	.table {
 		width: 90%;
 
 	}
+
 }

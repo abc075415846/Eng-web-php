@@ -1,7 +1,13 @@
 
 /*--------------------course-content-left--------------------------*/
+.content-wr {
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
 .content-left {
 	margin-bottom: 50px;
+	padding: 10px;
 }
 
 
@@ -62,7 +68,7 @@ video {
 }
 
 .btn-group button {
-	margin-left: 0;
+	margin-left: 0 !important;
 	background-color: #01447e;
 }
 
@@ -75,7 +81,6 @@ form {
 	width: 76%;
 	border: 1px solid #f1f1f1;
 	padding: 15px;
-	box-shadow: 0px 2px 4px rgb(0,0,0,0.2);
 	box-sizing: border-box;
 
 }
@@ -291,6 +296,10 @@ form {
 
 	.st-name {
 		padding-left: 0;
+	}
+
+	.wrapper {
+		padding: 0;
 	}
 
 }

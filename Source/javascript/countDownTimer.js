@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
-		$('#btn-start').click(function(){
-			var timer2 = "1:00";
+		// $('#btn-start').click(function(){
+			var timer2 = "30:00";
 			var interval = setInterval(function() {
 
 
@@ -28,5 +28,5 @@ $(document).ready(function(){
 			}, 1000);
 
 			// $('.start-test').css("display", "none");
-		});
+		// });
 	});

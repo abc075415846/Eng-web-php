@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>teacher</title>
+		<meta charset="utf-8">
+		<script
+			src="http://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous">
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/admin.css">
+		<link rel="stylesheet" type="text/css" href="css/admin-teacher.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<script>
+			$(function(){
+				$(".header").load("admin-header.html");
+				$(".slide-left").load("admin-slide.html");
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wr">
+			<div class="slide-left"></div>
+			<div class="all-content-wr">
+				<div class="header">
+					
+				</div>
+				<div class="content-show">
+					<fieldset>
+						<legend>Thông tin Giáo viên</legend>
+						<form method="POST" class="form-submit">
+							<div class="form-left">
+								<div class="form-group">
+									<input type="text" name="name" placeholder="Họ Tên">
+								</div>
+								<div class="form-group">
+									<input type="date" name="birth">
+								</div>
+								<div class="form-group">
+									<input type="tel" name="tel" placeholder="Điện thoại">
+								</div>
+								<div class="form-group">
+									<input type="text" name="address" placeholder="Địa chỉ">
+								</div>
+								<div class="form-group input-group">
+									<label><img src="./Images/download-1.png">
+										<p>
+											Drop image here or click to upload </br>
+											(This is just a demo dropzone. Selected image is not actually uploaded.)
+										</p>
+									</label>
+									<input type="file" name="">
+								</div>
+							</div>
+							<div class="form-right">
+								<div class="form-group">
+									<input type="email" name="email" placeholder="Email">
+								</div>
+								<div class="form-group select-style">
+									<i class="fas fa-chevron-down"></i>
+									<select id="sex">
+										<option value="0">Nam</option>
+										<option value="1">Nữ</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<input type="text" name="degree" placeholder="Trình độ">
+								</div>
+								<div class="form-group">
+									<textarea id="desc" placeholder="Giới thiệu...."></textarea>
+								</div>
+								<div class="account-w">
+									<h3>Account Information</h3>
+									<div class="form-group">
+										<input type="text" name="user" placeholder="Username">
+									</div>
+									<div class="form-group">
+										<input type="text" name="pass" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<input type="text" name="cfpass" placeholder="Confirm Password">
+									</div>
+								</div>
+							</div>
+							<div class="btn-group">
+								<button type="submit">Submit</button>
+							</div>
+						</form>
+					</fieldset>
+					
+				</div>
+			</div>
+		</div>
+		<script
+			src="http://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous">
+		</script>
+		<script src="javascript/admin.js"></script>
+		
+	</body>
+</html>

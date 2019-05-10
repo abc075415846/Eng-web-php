@@ -8,11 +8,12 @@
 			crossorigin="anonymous">
 		</script>
 		<link rel="stylesheet" type="text/css" href="css/wrap.css">
+		<link rel="stylesheet" type="text/css" href="css/header-basic.css">
 		<link rel="stylesheet" type="text/css" href="css/course-detail.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<script>
 			$(function(){
-				$("header").load("header.html");
+				$("header").load("header-basic.html");
 				$("footer").load("footer.html");
 			});
 		</script>
@@ -47,6 +48,16 @@
 						<source src="" type="video/mp4">
 						<source src="" type="video/ogg">
 					</video>
+					<div class="menu-uner-v">
+						<nav>
+							<ul>
+								<li class="bookmark"><a href="#descript" id="descript">Mô tả khóa học</a></li>
+								<li class="bookmark"><a href="#lessons">Bài giảng miễn phí</a></li>
+								<li class="bookmark"><a href="#teacher">Giáo viên giảng dạy</a></li>
+								<li class="bookmark"><a href="#comment">Đánh giá</a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 				<div class="course-detail">
 					<div class="course-t">
@@ -79,73 +90,64 @@
 					</div>
 				</div>
 			</div>
-			<div class="menu-uner-v sm-col-span-12">
-				<nav>
-					<ul>
-						<li class="bookmark"><a href="#descript" id="descript">Mô tả khóa học</a></li>
-						<li class="bookmark"><a href="#lessons">Bài giảng miễn phí</a></li>
-						<li class="bookmark"><a href="#teacher">Giáo viên giảng dạy</a></li>
-						<li class="bookmark"><a href="#comment">Đánh giá</a></li>
-					</ul>
-				</nav>
-			</div>
 		</div>
 		<div class="row" style="border-top: 1px solid #f1f1f1">
 			<div class="sm-col-span-8 lg-col-span-4">
-				<h3 id="teacher" >Mô tả khóa học</h3>
-				<div class="coures-description">
-					<div class="des-techer">
-						<h3>Giáo viên</h3>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-					</div>
-					<div class="des-re">
-						<h3>Yêu cầu khóa học</h3>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-					</div>
-					<div class="des-per">
-						<h3 id="lessons">Đối tượng</h3>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-					</div>
-				</div>
-				<div class="course-struct">
-					<div class="course-st-head">
-						<div class="course-st-title">
-							LESSONS
+				<div class="desc-wr">
+					<h3 id="teacher" >Mô tả khóa học</h3>
+					<div class="coures-description">
+						<div class="des-techer">
+							<h3>Giáo viên</h3>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						</div>
+						<div class="des-re">
+							<h3>Yêu cầu khóa học</h3>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						</div>
+						<div class="des-per">
+							<h3 id="lessons">Đối tượng</h3>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 						</div>
 					</div>
-					<div class="course-st-b">
-						<div class="course-st-row">
-							<div class="st-less"><b>Bài 01 </b></div>
-							<div class="st-name">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-							<div class="st-cr-test">
-								<div class="link-test">
-									<a href="course-content.html">Free</a>
-								</div>
+					<div class="course-struct">
+						<div class="course-st-head">
+							<div class="course-st-title">
+								LESSONS
 							</div>
 						</div>
-						<div class="course-st-row">
-							<div class="st-less"><b>Bài 02 </b></div>
-							<div class="st-name">Lorem Ipsum is simply dummy text of the.</div>
-						</div>
-						<div class="course-st-row">
-							<div class="st-less"><b>Bài 03 </b></div>
-							<div class="st-name">Lorem Ipsum is simply dummy text of the printing and typesetting.</div>
-						</div>
-						<div class="course-st-row">
-							<div class="st-less"><b>Bài 04 </b></div>
-							<div class="st-name">Lorem Ipsum is simply dummy text of the printing and typesetting.</div>
+						<div class="course-st-b">
+							<div class="course-st-row">
+								<div class="st-less"><b>Bài 01 </b></div>
+								<div class="st-name">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								<div class="st-cr-test">
+									<div class="link-test">
+										<a href="course-content.html">Free</a>
+									</div>
+								</div>
+							</div>
+							<div class="course-st-row">
+								<div class="st-less"><b>Bài 02 </b></div>
+								<div class="st-name">Lorem Ipsum is simply dummy text of the.</div>
+							</div>
+							<div class="course-st-row">
+								<div class="st-less"><b>Bài 03 </b></div>
+								<div class="st-name">Lorem Ipsum is simply dummy text of the printing and typesetting.</div>
+							</div>
+							<div class="course-st-row">
+								<div class="st-less"><b>Bài 04 </b></div>
+								<div class="st-name">Lorem Ipsum is simply dummy text of the printing and typesetting.</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="comment">
-					<form method="POST" action="" id="form-c">
-						<h3 id="comment">Bình luận</h3>
-						<textarea name="comment" placeholder="Mời bạn để lại bình luận..."></textarea>
-						<div class="btn-group">
-							<button type="submit">Gửi</button>
-						</div>
-					</form>
-					<!-----------------comment of student--------------------------->
+					<div class="comment">
+						<form method="POST" action="" id="form-c">
+							<h3 id="comment">Bình luận</h3>
+							<textarea name="comment" placeholder="Mời bạn để lại bình luận..."></textarea>
+							<div class="btn-group">
+								<button type="submit">Gửi</button>
+							</div>
+						</form>
+						<!-----------------comment of student--------------------------->
 						<div class="comments-history">
 							<ul class="comments-history-qa clear-fix">
 								<li>
@@ -197,6 +199,7 @@
 								</li>
 							</ul>
 						</div>
+					</div>
 				</div>
 			</div>
 			<div class="sm-col-span-4 md-col-span-3 lg-col-span-4">
@@ -207,8 +210,9 @@
 							<a href="course-detail.html"><img src="./Images/adult-chill-computer-450271.jpg"></a>
 						</div>
 						<div class="course-c">
-							<p class="course-title">English Lorem Ipsum is simply - Giáo viên <span>Nguyễn Văn A</span></p>
-							<p class="course-price"><b>Học phí:</b> <span>2.000.000</span> đồng</p>
+							<p class="course-title">English Lorem Ipsum is simply - <span>Nguyễn Văn A</span></p>
+							<p class="course-price"><span>2.000.000</span></p>
+							<a href="#">learn more</a>
 						</div>
 					</div>
 					<div class="course-ref-content">
@@ -216,8 +220,8 @@
 							<a href="#"><img src="./Images/adult-chill-computer-450271.jpg"></a>
 						</div>
 						<div class="course-c">
-							<p class="course-title">English - Giáo viên <span>Nguyễn Văn A</span></p>
-							<p class="course-price"><b>Học phí:</b> <span>2.000.000</span> đồng</p>
+							<p class="course-title">English - <span>Nguyễn Văn A</span></p>
+							<p class="course-price"><span>2.000.000</span></p>
 						</div>
 					</div>
 					<div class="course-ref-content">
@@ -225,8 +229,8 @@
 							<a href="#"><img src="./Images/adult-chill-computer-450271.jpg"></a>
 						</div>
 						<div class="course-c">
-							<p class="course-title">English - Giáo viên <span>Nguyễn Văn A</span></p>
-							<p class="course-price"><b>Học phí:</b> <span>2.000.000</span> đồng</p>
+							<p class="course-title">English - <span>Nguyễn Văn A</span></p>
+							<p class="course-price"><span>2.000.000</span></p>
 						</div>
 					</div>
 				</div>

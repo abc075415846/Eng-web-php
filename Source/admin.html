@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/admin.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	</head>
+	<body>
+		<div class="wr">
+			<div class="slide-left">
+				<nav class="slidebar">
+					<div class="slidebar-header">
+						<a href="admin.html">
+							<img src="./Images/logo-mobile.png">
+						</a>
+					</div>
+					<div class="slide-menu-wr">
+						<div class="menu-mobile">
+							<span>MENU</span>
+							<a href="#" class="icon-bar" id="menu-bar"><i class="fas fa-bars"></i></a>
+						</div>
+						<nav>
+							<ul class="menu-left clear-fix">
+								<li>
+									<a href="#" class="menu-dr">
+									<img src="./Images/home.png">
+									<span>Dashboard</span></a>
+									<ul class="menu-left-child">
+										<li><a href="#">Dashboard 1</a></li>
+										<li><a href="#">Dashboard 2</a></li>
+										<li><a href="#">Dashboard 3</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="menu-dr">
+									<img src="./Images/professor.png">
+									<span>Teacher</span></a>
+									<ul class="menu-left-child">
+										<li><a href="#">All Teacher</a></li>
+										<li><a href="#">Add Teacher</a></li>
+										<li><a href="#">Edit Teacher</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="menu-dr">
+									<img src="./Images/student-g.png">
+									<span>Student</span></a>
+									<ul class="menu-left-child">
+										<li><a href="#">Dashboard 1</a></li>
+										<li><a href="#">Dashboard 2</a></li>
+										<li><a href="#">Dashboard 3</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="menu-dr">
+									<img src="./Images/science.png">
+									<span>Course</span></a>
+									<ul class="menu-left-child">
+										<li><a href="#">Dashboard 1</a></li>
+										<li><a href="#">Dashboard 2</a></li>
+										<li><a href="#">Dashboard 3</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="menu-dr">
+									<img src="./Images/data.png">
+									<span>Pages</span></a>
+									<ul class="menu-left-child">
+										<li><a href="#">Dashboard 1</a></li>
+										<li><a href="#">Dashboard 2</a></li>
+										<li><a href="#">Dashboard 3</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</nav>
+			</div>
+			<div class="all-content-wr">
+				<div class="header-fix">
+					<div class="header-wr">
+						<ul class="clear-fix">
+							<li><a href="#">HOME</a></li>
+							<li><a href="#">ABOUT</a></li>
+							<li><a href="#">SERVICE</a></li>
+							<li><a href="#">SUPPORT</a></li>
+						</ul>
+					</div>
+					<div class="info-wr-right">
+						<ul class="dr-menu clear-fix">
+							<li><a href="#"><img src="./Images/mail.png"></a></li>
+							<li><a href="#"><img src="./Images/bell.png"></a></li>
+							<li class="account">
+								<div class="menu acount-head">
+									<img src="./Images/my-avatar.jpg">
+									<span>Admin</span>
+								</div>
+								<ul class="dr-child child">
+									<li><a href="#">My Account</a></li>
+									<li><a href="#">My Profile</a></li>
+									<li><a href="#">Setting</a></li>
+									<li><a href="#">Logout</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="container-search">
+					<div class="search">
+						<form method="POST">
+						<input type="text" name="search" placeholder="Tìm kiếm...">
+						<button type="submit"><i class="fas fa-search"></i></button>
+					</form>
+					</div>
+				</div>
+				<div class="container-count">
+					<div class="count-account">
+						<div class="desc">
+							<span class="count">1000</span>
+							<span class="name">Student</span>
+						</div>
+					</div>
+					<div class="count-teacher">
+						<div class="desc">
+							<span class="count">1000</span>
+							<span class="name">Teacher</span>
+						</div>
+					</div>
+					<div class="count-class">
+						<div class="desc">
+							<span class="count">1000</span>
+							<span class="name">Course</span>
+						</div>
+					</div>
+					<div class="count-document">
+						<div class="desc">
+							<span class="count">1000</span>
+							<span class="name">Document</span>
+						</div>
+					</div>
+				</div>
+				<div class="container-chart">
+					<canvas id="myChart"></canvas>
+				</div>
+			</div>
+		</div>
+		<script src="javascript/jquery-3.4.0.min.js"></script>
+		<script src="./javascript/admin.js"></script>
+		<script src="./javascript/chart.js"></script>
+	</body>
+</html>
